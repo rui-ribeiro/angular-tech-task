@@ -1,0 +1,25 @@
+<div class="row">
+    <div id="search" class="input-group">
+        <div class="search__addon input-group-addon">
+            <i class="fas fa-search"></i>
+        </div>
+        <input type="text" ng-model="inbox.search" class="form-control search__input" placeholder="Search">
+    </div>
+
+    <div class="inbox">
+        <div class="inbox__lis">
+            <div class="col-lg-12" ng-show="!inbox.messages.length">
+                No messages! Try sending one to a friend.
+            </div>
+            <div class="inbox__list-info col-lg-12"
+                 ng-repeat="message in inbox.messages | filter:{ name: inbox.search }"
+                 ng-click="inbox.goToMessage(message.id, $index);"
+                 ng-class="{active: $index == inbox.selected}">
+                <div class="inbox__list-from col-lg-6">{{ message.name }}</div>
+                <div class="inbox__list-date col-lg-6">{{ message.date | timeAgo }}</div>
+                <div class="inbox__list-subject col-lg-12"> {{ message.subjects | join }}</div>
+            </div>
+        </div>
+    </div>
+
+</div>

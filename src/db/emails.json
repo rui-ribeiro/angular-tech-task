@@ -1,0 +1,35 @@
+{
+  "collection": {
+    "items": [{
+      "id": "1",
+      "profileId": "1",
+      "name": "Aamna Webber",
+      "date": 1400956671914,
+      "subjects": [
+        "AngularJS + Career",
+        "AngularJS + Tutorial"
+      ]
+    }, {
+      "id": "2",
+      "profileId": "1",
+      "name": "Alexi Pitts",
+      "date": 1400956671914,
+      "subjects": [
+        "AngularJS + Technical Skills"
+      ]
+    }, {
+      "id": "3",
+      "profileId": "1",
+      "name": "Rudy Stark",
+      "date": 1400956671914,
+      "subjects": [
+        "AngularJS + Tools/Hacks."
+      ]
+    }],
+    "pageinfo": {
+      "total": 3,
+      "page": 1,
+      "pageSize": 25
+    }
+  }
+}

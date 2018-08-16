@@ -1,0 +1,147 @@
+html, body {
+  font-family: 'Quicksand', sans-serif;
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+}
+
+#resume-bar {
+  background-color: #2b2f42;
+  border-radius: 0;
+  border: 0;
+  height: 80px;
+  margin-bottom: 0;
+}
+
+////////////////////////////////////////
+// Search
+////////////////////////////////////////
+
+#search {
+  .search__addon {
+    background-color: #3b4053;
+    border: 1px solid #3b4053;
+    border-radius: 0;
+    color: white;
+    font-size: 20px;
+  }
+
+  .search__input {
+    border-radius: 0;
+    height: 80px;
+    background: #3b4053;
+    border-color: #3b4053;
+    color: white;
+    outline: none;
+  }
+}
+
+////////////////////////////////////////
+// Inbox
+////////////////////////////////////////
+
+#inbox {
+  background-color: #2b2f42;
+}
+
+.inbox__list-info {
+  color: white;
+}
+
+.inbox__list-subject {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  color: #9d9ea8;
+}
+
+.inbox__list-from {
+  font-size: 14px;
+  color: #a8a9b1;
+}
+
+.inbox__list-info {
+  padding-top: 20px;
+}
+
+.inbox__list-date {
+  text-align: right;
+  color: #7a7d88;
+}
+
+.inbox__list-info:hover,
+.inbox__list-info.active {
+  background: #f5f6f8;
+  cursor: pointer;
+}
+
+.inbox__list-info:hover .inbox__list-from {
+  color: #2B2B2F;
+  font-weight: bold;
+}
+
+.inbox__list-from:hover {
+  color: #2B2B2F;
+}
+
+////////////////////////////////////////
+// Email
+////////////////////////////////////////
+
+.email {
+  margin-left: 50px;
+  overflow: auto;
+  height: 100%;
+  max-height: 100%;
+  display: inline-block;
+  overflow-x: hidden;
+}
+
+.email__content {
+  margin-top: 30px;
+}
+
+.email__raw_text {
+  white-space: pre;
+  font-family: monospace;
+}
+
+/////////////////////////////////////////
+// Custom scroll bar
+////////////////////////////////////////
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+////////////////////////////////////////
+// Custom font
+////////////////////////////////////////
+
+/* latin */
+/* use local fonts */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quicksand Regular'), local('Quicksand-Regular'), url(https://fonts.gstatic.com/s/quicksand/v7/6xKtdSZaM9iE8KbpRA_hK1QN.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+

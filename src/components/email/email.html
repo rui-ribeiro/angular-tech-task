@@ -1,0 +1,23 @@
+<div class="email">
+    <div class="col-lg-6 text-left">
+        <h3 class="email__message">
+            <strong>{{ email.message.name }}</strong>
+        </h3>
+    </div>
+    <div class="col-lg-6 text-right">
+        <h3 class="email__message">
+            <strong>{{ email.message.date | date: 'mediumDate' }}</strong>
+        </h3>
+    </div>
+    <div class="col-lg-12">
+        <label class="checkbox-inline">
+            <input type="checkbox" ng-model="email.showAsHTML"> Click to see email as text
+        </label>
+    </div>
+
+    <div class="col-lg-12 email__content">
+        <div ng-show="email.showAsHTML" ng-bind-html="email.message.body.html"></div>
+        <div ng-show="!email.showAsHTML" class="email__raw_text" ng-bind="email.message.body.text"></div>
+    </div>
+
+</div>
